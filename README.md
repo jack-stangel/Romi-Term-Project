@@ -5,10 +5,12 @@ Hardware Components:
 - Complete Polulu Romi chassis with gearmotors, encoders, and power distribution board.
 - Nucleo L476 microcontroller
 - BNO055 9 DOF IMU
-- Polulu QTR-8RC Reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
+- Polulu QTR-8RC reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
 - 3x bump switch
 - HC06 serial Bluetooth module
 - Optional "Shoe of Brian" expansion board
+
+
 
 The objective of this code is to use closed loop feedback to guide a 2 wheel Romi robot along a path. The path is specified by a black line, and includes a physical obstacle, pictured below.
 
