@@ -1,0 +1,14 @@
+bump sensor:
+external interrupt
+back up slightly
+turn right until 90 degrees
+forward until x change in position
+turn left until 0 degrees
+forward until x change in position
+turn left until -90 degrees
+forward until x change in position
+turn right until 0 degrees
+resume line following
+
+final stop idea: time the whole run once working. stop the code after certain time has passed. test to calibrate.
+alternate idea: after the button is pressed, code is active that will stop robot if 4+ sensors are black (i.e. stop box)
