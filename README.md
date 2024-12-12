@@ -4,7 +4,7 @@ Cal Poly ME 405 Term Project 0x02
 Hardware Components:
 - Complete Polulu Romi chassis with gearmotors, encoders, and power distribution board
 - Nucleo L476 microcontroller
-- BNO055 9 DOF IMU
+- BNO055 9 DOF IMU, or similar
 - Polulu QTR-8RC reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
 - 3x bump switch
 - HC06 serial Bluetooth module
