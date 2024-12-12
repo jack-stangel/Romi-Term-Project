@@ -23,3 +23,5 @@ A light sensor array is used to determine the location of the line. By normalizi
 The control theory surrounding the movement of Romi is depicted in the block diagram below.
 
 ![image](https://github.com/user-attachments/assets/2c76c1dc-1815-44c9-b2b4-e9dfc82c16d4)
+
+This theory holds true at every point during the obstacle, except during the bump sensing as that triggers an interrupt as mentioned
