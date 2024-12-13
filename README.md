@@ -1,5 +1,5 @@
 # Romi-Term-Project
-Cal Poly ME 405 Term Project 0x02
+Cal Poly ME 405 Term Project 0x02: mecha13
 
 **Hardware Components**
 
