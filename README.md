@@ -7,13 +7,14 @@ Cal Poly ME 405 Term Project 0x02: mecha13
 - Nucleo L476 microcontroller
 - BNO055 9 DOF IMU, or similar
 - Polulu QTR-8RC reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
+- Acryllic Standoff Piece
 - 3x bump switch
 - HC06 serial Bluetooth module
 - Optional "Shoe of Brian" expansion board
 
 **Robot Assembly**
 
-When assembling the robot, we recommend mounting the sensor in front of the robot rather than underneath. This improved line following performance, and we used this same mount to secure the bump sensors. The IMU can be screwed to the chassis with standoffs, and the HC06 may require a custom mount as most seem to lack screw holes.
+When assembling the robot, we recommend mounting the sensor in front of the robot rather than underneath. This improved line following performance, and we used this same mount to secure the bump sensors. The IMU can be screwed to the chassis with standoffs, and the HC06 may require a custom mount as most seem to lack screw holes. The Nucleo and Shoe of Brian is mounted via standoffs and a piece of laser-cut acryllic.
 
 ![1000005427](https://github.com/user-attachments/assets/c0a46626-76c4-4cff-a0f8-5776d340aaf9)
 
