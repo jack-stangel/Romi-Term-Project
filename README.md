@@ -33,3 +33,9 @@ The control theory surrounding the movement of Romi is depicted in the block dia
 ![image](https://github.com/user-attachments/assets/9319c3a9-f0e9-4254-ac34-a84a8b26d6f2)
 
 This control loop utilizes proportional and derivative gain for the line sensing task, and will return a speed correction factor that gets placed in a proportional and integral controller for the motor speeds. The reasoning behind excluding the integral gain in line sensing is due to the huge error and discrepancies that this caused when running our tasks. Furthermore, we found that an increase in derivative gain provided our Romi with the most guidance when dealing with very tight turns such as after the dashed line sequence. Our motor control loop was left unchanged throughout the term as we were satisfied with the motor performances with the corresponding values. The overall control theory holds true at every point during the obstacle, except during the bump sensing as that triggers an interrupt as mentioned.
+
+**Task Diagram**
+
+A high-level task diagram is shown below for the main program. As seen, variables and other parameters are shared and interchanged between various tasks. Of note is the no shared variables between the IMU and bump tasks. Since the IMU wasn't utilized in this term project, it didn't have any variables and was set to a lower priority. Additionally, since the bump task was set as an interrupt and hard coded to perform a sequence, no variables were shared for that task and was similarly set to a lower priority. Since our printing task varied based on what we were testing at the time, this was set a lower priority as well.
+
+![image](https://github.com/user-attachments/assets/5135da5d-a0ef-4bba-b5a0-20502286f337)
