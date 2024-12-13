@@ -22,6 +22,6 @@ A light sensor array is used to determine the location of the line. By normalizi
 
 The control theory surrounding the movement of Romi is depicted in the block diagram below.
 
-![image](https://github.com/user-attachments/assets/2c76c1dc-1815-44c9-b2b4-e9dfc82c16d4)
+![image](https://github.com/user-attachments/assets/9319c3a9-f0e9-4254-ac34-a84a8b26d6f2)
 
-This theory holds true at every point during the obstacle, except during the bump sensing as that triggers an interrupt as mentioned
+This control loop utilizes proportional and derivative gain for the line sensing task, and will return a speed correction factor that gets placed in a a proportional and integral controller for the motor speeds. The reasoning behind excluding the integral gain in line sensing is due to the huge error and discrepancies that this caused when running our tasks. Furthermore, we found that an increase in derivative gain provided our Romi with the most guidance when dealing with very tight turns such as after the dashed line sequence. Our motor control loop was left unchanged throughout the term as we were satisfied with the motor performances with the corresponding values. The overall control theory holds true at every point during the obstacle, except during the bump sensing as that triggers an interrupt as mentioned. 
