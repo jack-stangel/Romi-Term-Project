@@ -2,6 +2,7 @@
 Cal Poly ME 405 Term Project 0x02
 
 **Hardware Components**
+
 - Complete Polulu Romi chassis with gearmotors, encoders, and power distribution board
 - Nucleo L476 microcontroller
 - BNO055 9 DOF IMU, or similar
@@ -11,11 +12,13 @@ Cal Poly ME 405 Term Project 0x02
 - Optional "Shoe of Brian" expansion board
 
 **Robot Assembly**
+
 When assembling the robot, we recommend mounting the sensor in front of the robot rather than underneath. This improved line following performance, and we used this same mount to secure the bump sensors. The IMU can be screwed to the chassis with standoffs, and the HC06 may require a custom mount as most seem to lack screw holes.
 
 ![1000005427](https://github.com/user-attachments/assets/c0a46626-76c4-4cff-a0f8-5776d340aaf9)
 
 **Objective**
+
 The objective of this code is to use closed loop feedback to guide a 2 wheel Romi robot along a path. The path is specified by a black line, and includes a physical obstacle, pictured below.
 
 ![image](https://github.com/user-attachments/assets/8bac884b-ceda-4239-b596-dd8a13399230)
@@ -23,6 +26,7 @@ The objective of this code is to use closed loop feedback to guide a 2 wheel Rom
 A light sensor array is used to determine the location of the line. By normalizing sensor data, a centroid of reflectance can be obtained, which guides the robot's turns. When the bump sensors on the robot are activated, this triggers an interrupt to route a predetermined square path around the obstacle. 
 
 **Control Theory**
+
 The control theory surrounding the movement of Romi is depicted in the block diagram below.
 
 ![image](https://github.com/user-attachments/assets/9319c3a9-f0e9-4254-ac34-a84a8b26d6f2)
