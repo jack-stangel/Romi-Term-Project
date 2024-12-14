@@ -85,3 +85,7 @@ The finite state machine for the printing task is displayed below.
 ![image](https://github.com/user-attachments/assets/d237f82b-8b88-4354-806e-cac43a8aa170)
 
 This task would initialize by starting a timer to allow the times to be printed with any data. The task would then read any relevant shared values that were necessary to be printed. In our final code, we opted to print out the velocities of both wheels and the total linear velocity, however this varied throughout the project as we also utilized this task to print out our line sensor readings and values, program flow, as well as other relevant debugging parameters. This task would print a table that was formatted with the help of ChatGPT for our data printing. This task would then yield, and be repeated as the scheduler ran. Reflecting on this task, we had the benefit of having the HC06 Bluetooth Module which allowed us to run our program and record data with Romi untethered. This proved to be useful when debugging certain parameters, mainly with line sensing and we view this task as one of the more underrated and valuable ones in this project.
+
+The wiring schematic for our Romi is shown below. NOTE: Shoe of Brian expansion board and Romi power distribution board are not included. Only final Nucleo pins are shown.
+
+![Wiring Diagram](https://github.com/user-attachments/assets/29183009-962f-4119-a483-ffb5787614be)
