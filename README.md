@@ -6,7 +6,7 @@ Cal Poly ME 405 Term Project 0x02: mecha13
 - Complete Polulu Romi chassis with gearmotors, encoders, and power distribution board
 - Nucleo L476 microcontroller
 - BNO055 9 DOF IMU, or similar
-- Polulu QTR-8RC reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
+- Polulu QTR-MD-06A reflectance sensor array (any array is possible, analog recommended, tweak normalization accordingly)
 - Acryllic Standoff Piece
 - 3x bump switch
 - HC06 serial Bluetooth module
@@ -76,4 +76,4 @@ The finite state machine for the printing task is displayed below.
 
 ![image](https://github.com/user-attachments/assets/d237f82b-8b88-4354-806e-cac43a8aa170)
 
-This task would initialize by starting a timer to allow the times to be printed with any data. The task would then read any relevant shared values that were necessary to be printed. In our final code, we opted to print out the velocities of both wheels and the total linear velocity, however this varied throughout the project as we also utilized this task to print out our line sensor readings and values, program flow, as well as other relevant debugging parameters. This task would print a table that was formatted with the help of ChatGPT for our data printing. This task would then yield, and be repeated as the scheduler ran. Reflecting on this task, we had the benefit of having the HC-05 Bluetooth Module which allowed us to run our program and record data with Romi untethered. This proved to be useful when debugging certain parameters, mainly with line sensing and we view this task as one of the more underrated and valuable ones in this project.
+This task would initialize by starting a timer to allow the times to be printed with any data. The task would then read any relevant shared values that were necessary to be printed. In our final code, we opted to print out the velocities of both wheels and the total linear velocity, however this varied throughout the project as we also utilized this task to print out our line sensor readings and values, program flow, as well as other relevant debugging parameters. This task would print a table that was formatted with the help of ChatGPT for our data printing. This task would then yield, and be repeated as the scheduler ran. Reflecting on this task, we had the benefit of having the HC06 Bluetooth Module which allowed us to run our program and record data with Romi untethered. This proved to be useful when debugging certain parameters, mainly with line sensing and we view this task as one of the more underrated and valuable ones in this project.
