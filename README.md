@@ -41,7 +41,7 @@ This control loop utilizes proportional and derivative gain for the line sensing
 
 **Task Diagram**
 
-A high-level task diagram is shown below for the main program. As seen, variables and other parameters are shared and interchanged between various tasks. Of note is the no shared variables between the IMU and bump tasks. Since the IMU wasn't utilized in this term project, it didn't have any variables and was set to a lower priority. Additionally, since the bump task was set as an interrupt and hard coded to perform a sequence, no variables were shared for that task and was similarly set to a lower priority. Since our printing task varied based on what we were testing at the time, this was set a lower priority as well.
+A high-level task diagram is shown below for the main program. As seen, variables and other parameters are shared and interchanged between various tasks. Of note is the no shared variables between the IMU and bump tasks. Since the IMU wasn't utilized in this term project, it didn't have any variables and was set to a lower priority. Additionally, since the bump task was set as an interrupt and hard coded to perform a sequence, no variables were shared for that task and was similarly set to a lower priority. Since our printing task varied based on what we were testing at the time, this was set a lower priority as well. In our main program, these tasks and parameters were shared using the task_share.py file, and the scheduler allowed cooperative multi-tasking using the cotask.py file 
 
 ![image](https://github.com/user-attachments/assets/5135da5d-a0ef-4bba-b5a0-20502286f337)
 
