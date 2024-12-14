@@ -24,7 +24,12 @@ The objective of this code is to use closed loop feedback to guide a 2 wheel Rom
 
 ![image](https://github.com/user-attachments/assets/8bac884b-ceda-4239-b596-dd8a13399230)
 
-A light sensor array is used to determine the location of the line. By normalizing sensor data, a centroid of reflectance can be obtained, which guides the robot's turns. When the bump sensors on the robot are activated, this triggers an interrupt to route a predetermined square path around the obstacle. 
+A light sensor array is used to determine the location of the line. By normalizing sensor data, a centroid of reflectance can be obtained, which guides the robot's turns. When the bump sensors on the robot are activated, this triggers an interrupt to route a predetermined square path around the obstacle.
+
+**Romi Trial Video**
+
+The link below will demonstrate the full video of our Romi navigating the path and obstacle.
+https://drive.google.com/file/d/1LN1t5X5QpA5D_mpJcGSsuaPToGwDRCUk/view?usp=drive_link
 
 **Control Theory**
 
